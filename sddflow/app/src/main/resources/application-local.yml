@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:calendar;MODE=MySQL;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ""
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+# Stub 활성 프로파일 표시: /build-interfaces 단계에서 @Profile("local")로 주입됨
+calendar:
+  profile: local
+  security:
+    permit-all: true

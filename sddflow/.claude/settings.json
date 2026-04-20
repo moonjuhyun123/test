@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Write",
+      "Edit",
+      "Bash(gradle*)",
+      "Bash(mvn*)",
+      "Bash(npm*)",
+      "Bash(git add*)",
+      "Bash(git commit*)",
+      "Bash(mkdir*)",
+      "Bash(cp*)",
+      "Bash(cat*)",
+      "Bash(ls*)"
+    ]
+  }
+}
